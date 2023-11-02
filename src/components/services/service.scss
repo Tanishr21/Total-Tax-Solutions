@@ -1,0 +1,31 @@
+.card-container {
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    justify-self: center;
+    padding-bottom: 200px;
+}
+.service{
+    width: 100%;
+    max-width: 100%;
+    .service-title{
+        text-align: center;
+        letter-spacing: 3px;
+        color: #a32cc4;
+        font-family: Montserrat, sans-serif;
+        padding-top: 75px;
+        padding-left: 20px;
+        padding-bottom: 80px;
+        font-weight: 600;
+        font-size: 80px;
+        position: relative;
+    }
+}
+@media  (max-width: 1024px) { 
+    .service>.service-title{
+        font-size:40px;
+      
+
+
+    }
+}

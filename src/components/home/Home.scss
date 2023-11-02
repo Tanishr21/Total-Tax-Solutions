@@ -1,0 +1,210 @@
+.home {
+    position: relative;
+    height: 63vh ;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 200px;
+  
+    
+    .button {
+        display: flex;
+        justify-content: center;
+
+        .button1 {
+            padding:18px 36px;
+            font-size: 18px;
+            position: relative;
+            margin: 10px;
+            font-weight: 600;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: #a32cc4;
+            }
+        }
+    
+        .button2 {
+            padding:18px 36px;
+            font-size: 18px;
+            position: relative;
+            font-weight: 600;
+            margin: 10px;
+            align-items: center;
+            justify-self: center;
+
+            a {
+                text-decoration: none;
+                color: #a32cc4;
+            }
+        }
+    }
+    
+    h1{
+        text-align: center;
+        letter-spacing: 3px;
+        padding: 200px;
+        padding-top: 10px;
+        padding-bottom: 75px;
+        font-weight: 600;
+        font-family: Montserrat, sans-serif;
+        font-size: 5.13vw;
+        text-decoration: none;
+        background: linear-gradient(
+			to right,
+			#a32cc4 40%,
+			#795695 50%,
+			#ac94f4 70%
+		);
+        background-size: 200% auto;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: flow 2s linear infinite;
+    }
+
+    @keyframes flow {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+    p {
+        text-align: left;
+        letter-spacing: 0.2px;
+        color: white;
+        padding-top: 200px;
+        // font-family: Montserrat, sans-serif;
+        font-size: 3vw;
+        text-decoration: none;
+        padding-left: 268px;
+        font-family: Inter, sans-serif;
+        font-weight: 600;
+    }
+    
+    // @-webkit-keyframes line-animation-2 {
+    //     0% {
+    //       opacity: 1;
+    //       bottom: 0px;
+    //     }
+    //     50% {
+    //       bottom: 50%;
+    //     }
+    //     100% {
+    //       bottom: 100%;
+    //       opacity: 1;
+    //     }
+    // }
+    
+    @keyframes line-animation-2 {
+        0% {
+          opacity: 1;
+          bottom: 0px;
+        }
+        50% {
+          bottom: 50%;
+        }
+        100% {
+          bottom: 100%;
+          opacity: 1;
+        }
+    }
+    
+    .line-animation {
+        top: 0px;
+        left: 50%;
+        z-index: -1;
+        width: 100%;
+        bottom: 0px;
+        display: block;
+        position: absolute;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    
+    .line-animation .line-area {
+        width: 12.5%;
+        height: 100%;
+        position: relative;
+        display: inline-block;
+        border-right: 2px solid #1C1C1C;
+    }
+    
+    .line-animation .line-area:before {
+        width: 1px;
+        right: -1px;
+        content: "";
+        height: 60px;
+        border-radius: 100%;
+        position: absolute;
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(transparent));
+        background-image: linear-gradient(0deg, #ffffff, transparent);
+    }
+      
+    .line-animation .line-area:nth-child(even):before {
+        -webkit-animation: line-animation-1 20s ease-out infinite;
+        animation: line-animation-1 20s ease-out infinite;
+    }
+      
+    .line-animation .line-area:nth-child(odd):before {
+        -webkit-animation: line-animation-2 20s ease-out infinite;
+        animation: line-animation-2 20s ease-out infinite;
+    }
+    
+    .line-animation .line-area:before {
+        display: none;
+    }
+    
+    .line-animation .line-area:before {
+        height: 20px;
+    }
+}
+
+.home-second{
+    
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+   
+    height: auto;
+}
+#home-four{
+    width:100%;
+    background-color: black;
+    font-family: Montserrat, sans-serif;
+}
+
+.hero-gradient {
+    position: absolute;
+    width: 404px;
+    height: 800px;
+    left: 20%;
+    top: 5%;
+  
+    background: rgba(149, 66, 232, 0.35);
+    filter: blur(175px);
+    transform: rotate(-114.2deg);
+}
+@media (max-width: 1024px){
+    .home{
+        .legal{
+        text-align:inherit;
+        padding-left:25px;
+        padding-right:10px;
+        font-size:20px;
+        }
+        .total{
+            font-size:10vw;
+            text-align:inherit;
+            padding-left:50px;
+
+        }
+        
+    
+   .gradient-1{
+        font-size:10px
+   }   
+}
+}

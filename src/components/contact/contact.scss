@@ -1,0 +1,132 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-top: 9vw;
+    padding-bottom: 9vw;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .text-container {
+        background-color: #202020;
+        width: 600px;
+        height: 420px;
+        color: white;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        align-items: center;
+        padding-left: 30px;
+        font-family: Montserrat, sans-serif;
+
+        span {
+            display: flex;
+            
+            flex-direction: row;
+            font-size: 18px;
+        }
+    }
+
+    .form-container {
+        background-color: #494949;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 420px;
+        font-family: Montserrat, sans-serif;
+        
+        input {
+            color: white;
+            font-size: 28px;
+            border: none;
+            border-bottom: 2px solid lightgray;
+            background: none;
+            margin-top: 40px;
+        }
+
+        textarea {
+            color: white;
+            font-size: 28px;
+            border: none;
+            border-bottom: 2px solid #f0f0f0;
+            background: none;
+            margin-top: 40px;
+        }
+
+        button {
+            border: 2px;
+            height: 50px;
+            width: 150px;
+            background-color: black;
+            color: white;
+            margin-top: 15px;
+            margin-left: 180px;
+        }
+    }
+
+    h1 {
+        color: #a32cc4;
+        font-size: 120px;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        
+    }
+
+    ::placeholder {
+        color: #dadada;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+}
+@media(max-width:640px){
+    .main h1{
+        font-size:60px;
+    }
+    .main{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-top: 9vw;
+    padding-bottom: 9vw;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .text-container{
+        font-size:10px;
+        
+        background-color: #202020;
+        width: 400px;
+            height: 300px;
+            color: white;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            text-align: left;
+            align-items: center;
+            padding-left: 30px;
+            font-family: Montserrat, sans-serif;
+
+    }
+    .form-container{
+       
+
+        input {
+            color: white;
+            font-size: 28px;
+            border: none;
+            border-bottom: 2px solid lightgray;
+            background: none;
+            margin-top: 40px;
+        }
+    }
+}
+}
